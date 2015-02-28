@@ -1,10 +1,10 @@
 {
-  "name": "ix-echo",
+  "name": "ix-expand",
   "version": "1.0.0",
-  "description": "A POSIX-like echo in JavaScript",
+  "description": "A POSIX-like expand in JavaScript",
   "main": "index.js",
   "bin": {
-    "echo": "bin/echo"
+    "expand": "bin/expand"
   },
   "scripts": {
     "test": "node test/test.js",
@@ -13,18 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/shama/ix-echo"
+    "url": "git://github.com/shama/ix-expand"
   },
   "keywords": [
     "posix",
-    "echo"
+    "expand"
   ],
   "author": "Kyle Robinson Young <kyle@dontkry.com> (http://dontkry.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shama/ix-echo/issues"
+    "url": "https://github.com/shama/ix-expand/issues"
   },
-  "homepage": "https://github.com/shama/ix-echo",
+  "homepage": "https://github.com/shama/ix-expand",
   "dependencies": {
     "inherits": "^2.0.1",
     "next-tick": "^0.2.2",
