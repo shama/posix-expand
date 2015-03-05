@@ -1,5 +1,5 @@
 {
-  "name": "ix-expand",
+  "name": "posix-expand",
   "version": "1.0.0",
   "description": "A POSIX-like expand in JavaScript",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/shama/ix-expand"
+    "url": "git://github.com/shama/posix-expand"
   },
   "keywords": [
     "posix",
@@ -22,9 +22,9 @@
   "author": "Kyle Robinson Young <kyle@dontkry.com> (http://dontkry.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shama/ix-expand/issues"
+    "url": "https://github.com/shama/posix-expand/issues"
   },
-  "homepage": "https://github.com/shama/ix-expand",
+  "homepage": "https://github.com/shama/posix-expand",
   "dependencies": {
     "inherits": "^2.0.1",
     "next-tick": "^0.2.2",
