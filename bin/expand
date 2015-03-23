@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 
+var process = require('../process')
+
 process.title = 'expand'
 
-var argv = require('yargs').argv
+var argv = require('yargs')(process.argv).argv
 var expand = require('../index.js')(argv)
 
 process.stdin.pipe(expand).pipe(process.stdout)
