@@ -1,9 +1,16 @@
 #!/usr/bin/env node
 
-process.title = 'expand'
+function main(process){
+  process = require('../process')(process)
 
-var argv = require('yargs').argv
-var expand = require('../index.js')(argv)
+  process.title = 'expand'
 
-process.stdin.pipe(expand).pipe(process.stdout)
-expand.on('end', process.stdin.end.bind(process.stdin))
+  var argv = require('yargs')(process.argv).argv
+  var expand = require('../index.js')(argv)
+
+  process.stdin.pipe(expand).pipe(process.stdout)
+  expand.on('end', process.stdin.end.bind(process.stdin))
+}
+module.exports = main
+
+require.main === module && main()
