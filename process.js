@@ -2,7 +2,7 @@ var original = require('process'),
   overlay
 
 module.exports = function(value) {
-  overlay = value
+  overlay = value || original
 }
 
 for (var i in original) {
